@@ -1,0 +1,41 @@
+{
+  "name": "cypress-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "$(npm bin)/cypress open",
+    "cy:run": "$(npm bin)/cypress run",
+    "hydrate:report": "node utils/fixjson.js",
+    "serve:report": "node utils/generateReport.js",
+    "report": "npm run hydrate:report && npm run serve:report"
+  },
+  "keywords": [],
+  "author": "mattbudde",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@cypress/webpack-preprocessor": "^5.4.0",
+    "@testing-library/cypress": "^6.0.0",
+    "@types/cypress-cucumber-preprocessor": "^1.14.1",
+    "aws-amplify": "^3.0.11",
+    "babel-loader": "^8.1.0",
+    "cypress": "^4.5.0",
+    "cypress-cucumber-preprocessor": "^2.3.1",
+    "multiple-cucumber-html-reporter": "^1.16.1",
+    "ts-loader": "^7.0.4",
+    "typescript": "^3.9.2",
+    "webpack": "^4.43.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/test-results",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {}
+}
