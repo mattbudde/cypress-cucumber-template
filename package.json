@@ -1,7 +1,7 @@
 {
-  "name": "cypress-template",
+  "name": "cypress-cucumber-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "A template for my Cypress and Cucumber testing setup",
   "main": "index.js",
   "scripts": {
     "cy:open": "$(npm bin)/cypress open",
@@ -10,9 +10,14 @@
     "serve:report": "node utils/generateReport.js",
     "report": "npm run hydrate:report && npm run serve:report"
   },
-  "keywords": [],
+  "keywords": [
+    "testing",
+    "cypress",
+    "cucumber"
+  ],
   "author": "mattbudde",
   "license": "MIT",
+  "homepage": "https://github.com/mattbudde/cypress-cucumber-template",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
