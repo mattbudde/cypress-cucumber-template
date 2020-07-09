@@ -8,7 +8,8 @@
     "cy:run": "$(npm bin)/cypress run",
     "hydrate:report": "node utils/fixjson.js",
     "serve:report": "node utils/generateReport.js",
-    "report": "npm run hydrate:report && npm run serve:report"
+    "clean:results": "rm -rf cypress/test-results/report",
+    "report": "npm run clean:results && npm run hydrate:report && npm run serve:report"
   },
   "keywords": [
     "testing",
