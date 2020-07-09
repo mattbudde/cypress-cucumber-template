@@ -1,6 +1,6 @@
 {
   "env": {},
-  "testFiles": "**/*.feature",
+  "testFiles": ["**/*.ts","**/*.feature"],
   "video": true,
   "viewportWidth": 1920,
   "viewportHeight": 1080
